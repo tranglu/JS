@@ -45,33 +45,38 @@ h3{
 	opacity: 1;
 }
 .bienMatKhiAnNext{
-	animation: bienmat1 1s forwards;
-}
-@-webkit-keyframes bienmat1{
-	from{transform: scale(1);opacity: 1}
-	to{transform: scale(1.5);opacity: 0}
-}
-.hienRaKhiAnNext{
-	animation: hienra1 1s forwards;
-}
-@-webkit-keyframes hienra1{
-	from{transform: scale(0.5);opacity: 0}
-	to{transform: scale(1);opacity: 1}
-}
-.bienMatKhiAnPre{
 	animation: bienmat2 1s forwards;
 }
 @-webkit-keyframes bienmat2{
-	from{transform: scale(1);opacity: 1}
-	to{transform: scale(0.5);opacity: 0}
+	from{transform: scale(1) translateX(0);opacity: 1}
+	to{transform: scale(0.5) translateX(-100%);opacity: 0}
 }
-.hienRaKhiAnPre{
-	animation: hienra2 1s forwards;
+		
+.hienRaKhiAnNext{
+	animation: hienra2 1.5s forwards;
 }
 @-webkit-keyframes hienra2{
-	from{transform: scale(1.5);opacity: 0}
-	to{transform: scale(1);opacity: 1}
+	from{transform: translateX(100%);opacity: 1;}
+	to{transform: translateX(0);opacity: 1;}
 }
+	
+.bienMatKhiAnPre{
+	animation: bienmat1 1.5s forwards;
+}
+@-webkit-keyframes bienmat1{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(100%);opacity: 1;}
+}
+	
+.hienRaKhiAnPre{
+	animation: hienra1 1s forwards;
+}
+@-webkit-keyframes hienra1{
+	from{transform: translateX(-100%) scale(0);opacity: 0}
+	to{transform: translateX(0) scale(1);opacity: 1}
+}
+	
+	
 @media(max-width:992px){
  	.chuyenslide{
 	font-size: 40px;

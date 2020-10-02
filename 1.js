@@ -1,4 +1,6 @@
-var nutPhai=document.querySelector('.chuyenslide b.phai'),
+
+	document.addEventListener("DOMContentLoaded",function(){
+		var nutPhai=document.querySelector('.chuyenslide b.phai'),
 	nutTrai=document.querySelector('.chuyenslide b.trai');
 var slides=document.querySelectorAll('.motslide');
 // console.log(slides);
@@ -55,8 +57,6 @@ var slides=document.querySelectorAll('.motslide');
 	 // hết chuyển slide trái
 	nutPhai.addEventListener('click',chuyenSlidePhai);
 	nutTrai.addEventListener('click',chuyenSlideTrai);
-	document.addEventListener("DOMContentLoaded",function(){
-		//code thực hiện
 		
 	},false);
 	
