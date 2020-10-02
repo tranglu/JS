@@ -63,7 +63,7 @@ li {
 	to{transform: scale(1);opacity: 1}
 }
 .bienMatKhiAnPre1{
-	animation: bienmat2 1s forwards;
+	animation: bienmat2_1 1s forwards;
 }
 @-webkit-keyframes bienmat2_1{
 	from{transform: scale(1);opacity: 1}
