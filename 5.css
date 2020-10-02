@@ -40,43 +40,140 @@ li {
 	z-index: 1;
 	color: gray;	
 }
+/*i.active{
+	color: red;
+}*/
 /*CHUYEN DONG*/
 .xuathien{
 	opacity: 1;
 }
-.bienMatKhiAnNext4{
-	animation: bienmat2 1.5s forwards;
+/*chuyển động zoom*/
+.bienMatKhiAnNext1{
+	animation: bienmat1_1 1s forwards;
 }
-@-webkit-keyframes bienmat2{
+@-webkit-keyframes bienmat1_1{
+	from{transform: scale(1);opacity: 1}
+	to{transform: scale(1.5);opacity: 0}
+}
+.hienRaKhiAnNext1{
+	animation: hienra1_1 1s forwards;
+}
+@-webkit-keyframes hienra1_1{
+	from{transform: scale(0.5);opacity: 0}
+	to{transform: scale(1);opacity: 1}
+}
+.bienMatKhiAnPre1{
+	animation: bienmat2 1s forwards;
+}
+@-webkit-keyframes bienmat2_1{
+	from{transform: scale(1);opacity: 1}
+	to{transform: scale(0.5);opacity: 0}
+}
+.hienRaKhiAnPre1{
+	animation: hienra2_1 1s forwards;
+}
+@-webkit-keyframes hienra2_1{
+	from{transform: scale(1.5);opacity: 0}
+	to{transform: scale(1);opacity: 1}
+}
+/*hết động zoom*/
+/*chuyển động trượt*/
+.bienMatKhiAnNext2{
+	animation: bienmat1_2 1.5s cubic-bezier(.97,.35,.29,.8) forwards;
+}
+@-webkit-keyframes bienmat1_2{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(-100%);opacity: 1;}
+}
+.hienRaKhiAnNext2{
+	animation: hienra1_2 1.5s cubic-bezier(.97,.35,.29,.8) forwards;
+}
+@-webkit-keyframes hienra1_2{
+	from{transform: translateX(100%);opacity: 1;}
+	to{transform: translateX(0);opacity: 1;}
+}
+.bienMatKhiAnPre2{
+	animation: bienmat2_2 1.5s cubic-bezier(.97,.35,.29,.8) forwards;
+}
+@-webkit-keyframes bienmat2_2{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(100%);opacity: 1;}
+}
+.hienRaKhiAnPre2{
+	animation: hienra2_2 1.5s cubic-bezier(.97,.35,.29,.8) forwards;
+}
+@-webkit-keyframes hienra2_2{
+	from{transform: translateX(-100%);opacity: 1;}
+	to{transform: translateX(0);opacity: 1;}
+}
+/*hết động trượt*/
+/*chuyển động apple*/
+.bienMatKhiAnNext3{
+	animation: bienmat2_3 1s forwards;
+}
+@-webkit-keyframes bienmat2_3{
+	from{transform: scale(1) translateX(0);opacity: 1}
+	to{transform: scale(0.5) translateX(-100%);opacity: 0}
+}
+		
+.hienRaKhiAnNext3{
+	animation: hienra2_3 1.5s forwards;
+}
+@-webkit-keyframes hienra2_3{
+	from{transform: translateX(100%);opacity: 1;}
+	to{transform: translateX(0);opacity: 1;}
+}
+	
+.bienMatKhiAnPre3{
+	animation: bienmat1_3 1.5s forwards;
+}
+@-webkit-keyframes bienmat1_3{
+	from{transform: translateX(0);opacity: 1;}
+	to{transform: translateX(100%);opacity: 1;}
+}
+	
+.hienRaKhiAnPre3{
+	animation: hienra1 1s forwards;
+}
+@-webkit-keyframes hienra1{
+	from{transform: translateX(-100%) scale(0);opacity: 0}
+	to{transform: translateX(0) scale(1);opacity: 1}
+}
+/*hết động apple*/
+ /*chuyển động xoay 3D*/
+.bienMatKhiAnNext4{
+	animation: bienmat2_4 1.5s forwards;
+}
+@-webkit-keyframes bienmat2_4{
 	from{transform: translateX(0) scale(1) ;opacity: 1}
 	to{transform: translateX(50%) scale(0.5) ;opacity: 0}
 }
 		
 .hienRaKhiAnNext4{
-	animation: hienra2 1.2s forwards;
+	animation: hienra2_4 1.2s forwards;
 }
-@-webkit-keyframes hienra2{
+@-webkit-keyframes hienra2_4{
 	from{transform: translateX(-80%) rotateY(-65deg);opacity: 0;}
 	to{transform:   translateX(0) rotateY(0) ;opacity: 1;}
 }
 	
 .bienMatKhiAnPre4{
-	animation: bienmat1 1.2s forwards;
+	animation: bienmat1_4 1.2s forwards;
 }
-@-webkit-keyframes bienmat1{
+@-webkit-keyframes bienmat1_4{
 	from{transform: translateX(0) rotateY(0deg);opacity: 1;}
 	to{transform:   translateX(-50%) rotateY(-65deg) ;opacity: 0;}
 }
 	
 .hienRaKhiAnPre4{
-	animation: hienra1 1.5s forwards;
+	animation: hienra1_4 1.5s forwards;
 }
-@-webkit-keyframes hienra1{
+@-webkit-keyframes hienra1_4{
 	from{transform: translateX(100%) scale(0.5);opacity: 0}
 	to{transform: translateX(0) scale(1);opacity: 1}
 }
 	
-	
+	/*hết chuyển động xoay 3d*/
 @media(max-width:992px){
  	.chuyenslide{
 	font-size: 40px;
